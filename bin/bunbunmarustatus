@@ -1,0 +1,10 @@
+#!/usr/bin/python -u
+import bunbunmarustatus as bun
+import sys
+
+try:
+    interval = int(sys.argv[1])
+except ValueError:
+    interval = 5
+
+bun.run(interval)

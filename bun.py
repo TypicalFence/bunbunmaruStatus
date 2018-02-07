@@ -1,7 +1,8 @@
-#!/usr/bin/python -u
+# TODO delete this file before release
 import sys
 import time
 import bunbunmarustatus as bun
+
 
 try:
     interval = int(sys.argv[1])

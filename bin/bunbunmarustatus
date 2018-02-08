@@ -3,16 +3,27 @@ import sys
 import time
 import bunbunmarustatus as bun
 
+pattern = "{{time}}"
+
+if "-c" not in sys.argv:
+    if "--laptop" in sys.argv:
+        pattern = "{{battery}} {{time}}"
+
+    if "--mpd" in sys.argv:
+        pattern = "{{mpd}} " + pattern
+else: 
+    i = sys.argv.index("-c")
+    pattern = sys.argv[i + 1]
+
 try:
     interval = int(sys.argv[1])
 except:
     interval = 5
 
 
-status = bun.Status("{{battery}} {{time}}")
+status = bun.Status(pattern)
 
-bun.Time().register(status)
-bun.Battery().register(status)
+bun.factory(status)
 
 while True:
     print(status.get_status())

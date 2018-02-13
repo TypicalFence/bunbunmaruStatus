@@ -10,6 +10,7 @@ def get_current_song():
         client.close()
         client.disconnect()
         return current["title"] + " - " + current["artist"]
+
     except:
         return ""
 
@@ -17,5 +18,5 @@ class MPD(Module):
     def get_name(self):
         return "mpd"
     
-    def get_text(self):
-        return get_current_song()
+    def get_block(self):
+        return {"full_text": get_current_song() }

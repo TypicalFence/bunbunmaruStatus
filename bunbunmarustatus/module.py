@@ -4,7 +4,7 @@ class Module(ABC):
     def register(self, status):
         status.add_module(self)
     
-    def get_text(self):
+    def get_block(self):
         raise NotImplementedError
     
     def get_name(self):

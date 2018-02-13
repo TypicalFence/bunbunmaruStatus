@@ -18,8 +18,9 @@ def get_time():
 
 
 class Time(Module):
-    def get_text(self):
-        return get_date() + " " + get_time()
+    def get_block(self):
+        text = get_date() + " " + get_time()
+        return {"full_text": text}
     
     def get_name(self):
         return "time"

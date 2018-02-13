@@ -25,6 +25,12 @@ status = bun.Status(pattern)
 
 bun.factory(status)
 
+sys.stdout.write('{"version":1}\n')
+sys.stdout.flush()
+sys.stdout.write("[\n")
+sys.stdout.flush()
+
 while True:
-    print(status.get_status())
+    sys.stdout.write(status.get_status() + ",\n")
+    sys.stdout.flush()
     time.sleep(interval)

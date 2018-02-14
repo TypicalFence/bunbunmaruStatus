@@ -9,7 +9,7 @@ class PulseAudio(Module):
     def get_block(self):
         sink = self.pulse.sink_list()[0]
         volume = sink.volume.value_flat * 100
-        if sink.mute == 1:
+        if sink.mute == 0:
             text = str(volume).split(".")[0] + "%"
         else: 
             text = "muted"

@@ -3,14 +3,18 @@ import sys
 import time
 import bunbunmarustatus as bun
 
-pattern = "{{time}}"
+pattern = "time"
 
 if "-c" not in sys.argv:
     if "--laptop" in sys.argv:
-        pattern = "{{battery}} {{time}}"
+        pattern = "battery time"
+
+    if "--pulse" in sys.argv:
+        pattern = "pulse " + pattern
 
     if "--mpd" in sys.argv:
-        pattern = "{{mpd}} " + pattern
+        pattern = "mpd " + pattern
+
 else: 
     i = sys.argv.index("-c")
     pattern = sys.argv[i + 1]

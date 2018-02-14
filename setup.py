@@ -8,7 +8,7 @@ except IOError:
 
 setup(
     name="bunbunmarustatus",
-    version="1.2.5",
+    version="1.4.0",
     description="A pip package",
     license="GPL3",
     author="Alex Fence",

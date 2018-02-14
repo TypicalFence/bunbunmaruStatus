@@ -13,7 +13,7 @@ setup(
     license="GPL3",
     author="Alex Fence",
     packages=find_packages(),
-    install_requires=["python-mpd2"],
+    install_requires=["python-mpd2", "pulsectl"],
     long_description=long_description,
     classifiers=[
         "Programming Language :: Python",

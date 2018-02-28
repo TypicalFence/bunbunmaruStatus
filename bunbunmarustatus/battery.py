@@ -1,5 +1,4 @@
 import subprocess
-from termcolor import colored
 from .module import Module
 
 def to_percentage(value): 
@@ -27,8 +26,3 @@ class Battery(Module):
 
     def get_name(self):
         return "battery"
-        
-
-if __name__ == "__main__":
-    bat = Battery()
-    print(bat.get_text())

@@ -20,5 +20,4 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     scripts=["bin/bunbunmarustatus"]
-
 )

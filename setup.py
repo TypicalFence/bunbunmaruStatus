@@ -8,12 +8,12 @@ except IOError:
 
 setup(
     name="bunbunmarustatus",
-    version="1.5.0",
+    version="1.5.1",
     description="A pip package",
     license="GPL3",
     author="Alex Fence",
     packages=find_packages(),
-    install_requires=["python-mpd2", "pulsectl"],
+    install_requires=["python-mpd2", "pulsectl", "ini-parser"],
     long_description=long_description,
     classifiers=[
         "Programming Language :: Python",

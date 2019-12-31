@@ -9,6 +9,7 @@ verify_ssl = true
 python-mpd2 = "*"
 pulsectl = "*"
 wpa-status = {git = "https://github.com/AlexFence/wpa_status.git"}
+ini-parser = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+python-mpd2 = "*"
+pulsectl = "*"
+wpa-status = {git = "https://github.com/AlexFence/wpa_status.git"}
+
+[requires]
+python_version = "3.7"

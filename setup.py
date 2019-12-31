@@ -8,7 +8,7 @@ except IOError:
 
 setup(
     name="bunbunmarustatus",
-    version="1.4.5",
+    version="1.5.0",
     description="A pip package",
     license="GPL3",
     author="Alex Fence",
@@ -17,8 +17,7 @@ setup(
     long_description=long_description,
     classifiers=[
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
     ],
     scripts=["bin/bunbunmarustatus"]
-
 )

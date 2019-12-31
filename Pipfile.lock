@@ -1,0 +1,48 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "b39576d6300700eff28bd0b7f6c1f93f04a5bcc9c7e93258aab7fced96875c8a"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "ini-parser": {
+            "hashes": [
+                "sha256:a9be131f488ba6bba5abd440b2e6c02e2032d9b578cef024864c78ad02d6f609"
+            ],
+            "index": "pypi",
+            "version": "==1.1.0"
+        },
+        "pulsectl": {
+            "hashes": [
+                "sha256:137e38017960d7fc42677da12b703da42359c94803c80407ea5dddae363ba1f6",
+                "sha256:9baed385042ef725d9e4429bca1a58b5f0832050519b3bd1a7ba3c0336f4ecfb"
+            ],
+            "index": "pypi",
+            "version": "==19.10.4"
+        },
+        "python-mpd2": {
+            "hashes": [
+                "sha256:29119e3a88ef4a6f15acb1b83bab9344fba8eefc370e0144ffb77f5138e65dd7",
+                "sha256:772fa6861273bb9f363a97987c2c45ca3965eb770570f1f02566efec9c89fc5f"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
+        },
+        "wpa-status": {
+            "git": "https://github.com/AlexFence/wpa_status.git",
+            "ref": "683cac12883a12cbf0abdfe15d16d60615a77b0f"
+        }
+    },
+    "develop": {}
+}

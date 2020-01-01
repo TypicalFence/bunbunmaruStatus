@@ -8,6 +8,7 @@ class Wifi(Module):
         super().__init__()
         self._config = ini.parse(open("/etc/wpa_statusd.ini").read())
         self._client = wpa_status.Client(self._config["socket"])
+        self._text_cache = ""
 
     def _get_text(self):
         text = ""
@@ -19,19 +20,20 @@ class Wifi(Module):
             status = status_resp.result["Status"]
             if status["ssid"] is not None:
                 ssid = status["ssid"]
-                text = "wifi: " + ssid
+                text = ssid
             else:
-                text = "wifi: disconnected"
+                text = "disconnected"
         else:
-            text = "wifi: off"
+            text = "off"
 
         return text
 
     def get_block(self):
-        text = ""
+        text = self._text_cache
 
         try:
             text = self._get_text()
+            self._text_cache = text
         # TODO: I dunno, it happens ;w;
         except:
             pass

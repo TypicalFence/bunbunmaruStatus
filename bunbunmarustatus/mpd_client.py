@@ -5,8 +5,9 @@ from .module import Module
 class MPD(Module):
     def __init__(self):
         self._client = MPDClient()
-
-    def get_name(self):
+    
+    @staticmethod
+    def get_name():
         return "mpd"
     
     def get_block(self):

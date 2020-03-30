@@ -10,7 +10,7 @@ modules = {}
 
 
 def _add_module(m):
-    modules[m().get_name()] = m
+    modules[m.get_name()] = m
 
 
 _add_module(Time)

@@ -40,5 +40,5 @@ class Wifi(Module):
 
         return {"full_text": text}
 
-    def get_name(self):
+    def get_name():
         return "wifi"

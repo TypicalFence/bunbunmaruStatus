@@ -23,6 +23,7 @@ class Battery(Module):
             color = "#FFFF00"
         
         return {"full_text": to_percentage(value), "color": color}
-
-    def get_name(self):
+    
+    @staticmethod
+    def get_name():
         return "battery"

@@ -7,5 +7,6 @@ class Module(ABC):
     def get_block(self):
         raise NotImplementedError
     
-    def get_name(self):
+    @staticmethod
+    def name():
         raise NotImplementedError

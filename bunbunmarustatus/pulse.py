@@ -1,6 +1,7 @@
 import pulsectl
 from .module import Module
 
+
 class PulseAudio(Module):
     def __init__(self):
         super().__init__()
@@ -11,7 +12,7 @@ class PulseAudio(Module):
         volume = sink.volume.value_flat * 100
         if sink.mute == 0:
             text = str(volume).split(".")[0] + "%"
-        else: 
+        else:
             text = "muted"
 
         return {"full_text": text}

@@ -1,8 +1,10 @@
 import subprocess
 from .module import Module
 
-def to_percentage(value): 
+
+def to_percentage(value):
     return str(value) + "%"
+
 
 class Battery(Module):
     def get_block(self):
@@ -21,9 +23,9 @@ class Battery(Module):
                 color = "#00FF00"
         elif status == "Charging":
             color = "#FFFF00"
-        
+
         return {"full_text": to_percentage(value), "color": color}
-    
+
     @staticmethod
     def get_name():
         return "battery"

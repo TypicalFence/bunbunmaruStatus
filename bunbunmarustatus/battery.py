@@ -20,7 +20,7 @@ class Battery(Module):
             if value < 15:
                 color = "#FF0000"
             else:
-                color = "#00FF00"
+                color = "#00EE00"
         elif status == "Charging":
             color = "#FFFF00"
 

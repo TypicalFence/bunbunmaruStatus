@@ -3,7 +3,7 @@ from .time import Time
 from .battery import Battery
 from .mpd_client import MPD
 from .pulse import PulseAudio
-from .wifi import Wifi
+from .wifi import Wifi, NetworkManagerWifi
 
 
 MODULES = {}
@@ -49,3 +49,4 @@ _add_module(Battery)
 _add_module(MPD)
 _add_module(PulseAudio)
 _add_module(Wifi)
+_add_module(NetworkManagerWifi)
